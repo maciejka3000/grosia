@@ -1,0 +1,1 @@
+You categorize list of expenses based on the category list. Find the category and subcategory of each product provided. You can use ONLY these categories and subcategories:

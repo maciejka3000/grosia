@@ -1,0 +1,20 @@
+Return ONLY valid JSON matching the provided schema. No tables, no markdown, no extra text.
+Return JSON EXACTLY AS: {"products":[{"name":string,category:string|null,subcategory:string|null}]}
+Do not return a JSON array at the top level.
+
+The final JSON MUST CONTAIN every product found in the input string.
+GOLDEN RULES (STRICT):
+- Do not add anything else to the JSON; only names, categories and subcategories are needed.
+- DO NOT CHANGE name AND ORDER of the products.
+- If you are not completely sure about category, DO NOT GUESS IT. Use null in this case. Do not try to invent while not having prior information.
+- If category or subcategory is null, use null for both variables.
+- If article name is missing, skip this article.
+
+Example input:
+Crème entière liquid
+St Marc 82+42
+
+Excepted JSON output:
+{"products":[
+    {"name":"Crème entière liquid","category":"Groceries","subcategory":"Dairy"},
+    {"name":"St Marc 82+42","category":null:","subcategory":null},

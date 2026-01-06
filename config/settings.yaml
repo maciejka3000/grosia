@@ -1,0 +1,59 @@
+# llm backend
+client_url: 'http://127.0.0.1:1234/v1'
+client_api_key: 'sk-no-key'
+
+# model settings
+model_name: "openai/gpt-oss-20b"
+model_settings_extract:
+  - reasoning: {'effort': 'low'}
+  - temperature: .1
+model_settings_categorize:
+  - reasoning: {'effort': 'low'}
+  - temperature: .1
+
+### runtime settings
+run_on_device: True
+device_name: "cpu"
+
+### save folder settings
+receipt_save_folder_path: 'path/to/receipts'
+db_path: 'path/to/receipts.db'
+
+
+### segmentation settings
+segmentation_type: 'SAM' # 'SAM' or 'YOLO'
+#segmentation_model_path: '/segmentator_n.pt'
+segmentation_model_path: '/path/to/model/sam2.1_b.pt'
+
+straightening_settings:
+  r_angle: 0
+  eps_corners: .01
+  n_points: 300
+  circle_diameter: .01
+  max_angle_theta: 50
+  points_short_amount: 5
+  show_contour_plot: False
+
+segmentation_settings:
+  conf: .4
+  imgsz: 960
+  rect: True
+  verbose: False
+
+### OCR settings
+ocr_settings:
+  det_arch: 'db_resnet50'
+  reco_arch: 'crnn_vgg16_bn'
+  pretrained: True
+  pretrained_backbone: True
+  assume_straight_pages: False
+  preserve_aspect_ratio: True
+  detect_language: True
+
+ocr_verbose: False
+
+
+orientation_settings:
+  detect_orientation: False
+
+

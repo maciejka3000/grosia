@@ -1,0 +1,46 @@
+# categories.yaml
+
+categories:
+  Fixed expenses:
+    - Fixed expenses
+  Groceries:
+    - Dairy
+    - Meat
+    - Fruits and vegetables
+    - Snacks
+    - Alcohol
+    - Bakery
+    - Beverages
+    - Dry food
+    - Cooking ingredients
+    - Other
+
+  Household:
+    - Decorations
+    - Appliances
+    - Maintenance
+    - Furniture
+    - Cleaning materials
+    - Toiletries
+
+  Travels and outings:
+    - Restaurants
+    - Transport
+    - Attractions / events
+    - Nightlife
+    - Car maintenance
+
+  Amenities:
+    - Smoking
+    - Hobby
+    - Takeout
+    - Clothing
+    - Electronics
+    - Sport
+
+  Healthcare:
+    - Doctors and dentists
+    - Drugs
+
+  Other:
+    - Other
